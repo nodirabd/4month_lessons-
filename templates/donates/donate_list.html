@@ -1,0 +1,172 @@
+<h1>Мои покупки</h1>
+
+<a href="/create_donate/">Добавить донат</a>
+
+<ul>
+    {% for i in donate %}
+<h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul><h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <li>
+        <h2>Ваше имя:{{ i.name }}</h2>
+        <img src="{{ i.image.url }}" alt="" width="200" height="200">
+        <p>Вы купили блог: {{ i.choice_blog }}</p>
+        <p>Ваш номер карты: {{ i.number_card }}</p>
+        <p>Дата покупки: {{ i.created_at }}</p>
+        <p>Дата изменения данных: {{ i.updated_at }}</p>
+         
+        <button><a href="/donate_list/{{ i.id }}/delete/">Удалить</a></button>
+        <button><a href="/donate_list/{{ i.id }}/update/">Изменить</a></button>
+
+    </li>
+
+    {% endfor %}
+</ul><h1>Мои покупки</h1>
+
+<a href="/create_donate/">Добавить донат</a>
+
+<ul>
+    {% for i in donate %}
+<h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul><h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <li>
+        <h2>Ваше имя:{{ i.name }}</h2>
+        <img src="{{ i.image.url }}" alt="" width="200" height="200">
+        <p>Вы купили блог: {{ i.choice_blog }}</p>
+        <p>Ваш номер карты: {{ i.number_card }}</p>
+        <p>Дата покупки: {{ i.created_at }}</p>
+        <p>Дата изменения данных: {{ i.updated_at }}</p>
+         
+        <button><a href="/donate_list/{{ i.id }}/delete/">Удалить</a></button>
+        <button><a href="/donate_list/{{ i.id }}/update/">Изменить</a></button>
+
+    </li>
+
+    {% endfor %}
+</ul><h1>Мои покупки</h1>
+
+<a href="/create_donate/">Добавить донат</a>
+
+<ul>
+    {% for i in donate %}
+<h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul><h1>Donation List</h1>
+<a href="/create_donate/">ADD DONATE</a>
+<ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <!-- Исправлено: переменная 'donate' (как во views.py) -->
+    {% for i in donate %}
+    <li>
+        <h2>Your name: {{ i.name }}</h2>
+        <!-- Исправлено: поле называется 'photo' -->
+        {% if i.photo %}
+            <img src="{{ i.photo.url }}" alt="" width="200" height="200">
+        {% endif %}
+        <p>You bought blog: {{ i.choice_blog }}</p>
+        <p>Date of bought : {{ i.created_at }}</p>
+        <p>Date of update : {{ i.updated_at }}</p>
+        <button><a href="/donate_list">delete</a></button>
+        <button><a href="#">edit</a></button>
+    </li>
+    {% endfor %}
+</ul>
+    <li>
+        <h2>Ваше имя:{{ i.name }}</h2>
+        <img src="{{ i.image.url }}" alt="" width="200" height="200">
+        <p>Вы купили блог: {{ i.choice_blog }}</p>
+        <p>Ваш номер карты: {{ i.number_card }}</p>
+        <p>Дата покупки: {{ i.created_at }}</p>
+        <p>Дата изменения данных: {{ i.updated_at }}</p>
+         
+        <button><a href="/donate_list/{{ i.id }}/delete/">Удалить</a></button>
+        <button><a href="/donate_list/{{ i.id }}/update/">Изменить</a></button>
+
+    </li>
+
+    {% endfor %}
+</ul>

@@ -21,6 +21,7 @@ class Car(models.Model):
 class NummerCar(models.Model):
     choice_car = models.OneToOneField(Car, on_delete=models.CASCADE, related_name='nummer_car', null=True)
     number_car = models.CharField(max_length=100, default='0_KG____')
+    
     created_at = models.DateField(auto_now_add=True)
 
     def __str__(self):

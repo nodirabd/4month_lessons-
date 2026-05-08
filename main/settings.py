@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'auto',
+    'donates',
+    'users',
 ]
 #безопасность
 MIDDLEWARE = [
