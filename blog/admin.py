@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .import models
+from . import models
 
-admin.site.register(models.Blog)
-
-# Register your models here.
+@admin.register(models.Blog)
+class BlogAmin(admin.ModelAdmin):
+    exclude = ('views',)

@@ -1,5 +1,5 @@
-<h1>Изменить форму для покупки доната</h1>
-<form  method="POST" enctype="multipart/form-data">
+<h1>Заполнить форму для покупки доната</h1>
+<form action="/create_donate/" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
        {{  form.as_p  }}
     <button type="submit">Отправить</button>

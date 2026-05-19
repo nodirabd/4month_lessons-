@@ -1,6 +1,5 @@
 from django.db import models
 
-# many to many
 class CategoryCar(models.Model):
     name = models.CharField(max_length=100)
 
@@ -8,7 +7,6 @@ class CategoryCar(models.Model):
         return self.name
 
 
-# one to one
 class Car(models.Model):
     title = models.CharField(max_length=50, default='Lexus RX 300')
     categories = models.ManyToManyField(CategoryCar, null=True)
@@ -21,13 +19,11 @@ class Car(models.Model):
 class NummerCar(models.Model):
     choice_car = models.OneToOneField(Car, on_delete=models.CASCADE, related_name='nummer_car', null=True)
     number_car = models.CharField(max_length=100, default='0_KG____')
-    
     created_at = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return f'{self.choice_car}---{self.number_car}'
 
-# one to many
 
 class ReviewCar(models.Model):
     choice_car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='reviews')

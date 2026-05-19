@@ -1,5 +1,5 @@
-from django.apps import AppConfig
+from django.contrib import admin
 
+from . import models
 
-class DonatesConfig(AppConfig):
-    name = 'donates'
+admin.site.register(models.Donate)

@@ -4,5 +4,4 @@ from . import models
 class DonateForm(forms.ModelForm):
     class Meta:
         model = models.Donate
-        fields = '__all__'
-        
+        fields = "__all__"

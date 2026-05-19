@@ -13,9 +13,5 @@ class Blog(models.Model):
     quantity = models.PositiveIntegerField(verbose_name='укажите количество страниц', default=20, null=True)
     type_blog = models.CharField(max_length=100, choices= TYPE_BLOG, default='программирование')
     created_at = models.DateTimeField(auto_now_add=True)
-    
-
     def __str__(self):
         return self.title
-# python manage.py makemigrations
-# python manage.py migrate
